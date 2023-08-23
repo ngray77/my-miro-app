@@ -5,35 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/assets/style.css" />
     <script src="https://miro.com/app/static/sdk/v2/miro.js"></script>
-    <title>My Miro App</title>
+    <title>ChattyCards</title>
   </head>
   <body>
     
     <div id="root">
       <div class="grid wrapper">
         <div class="cs1 ce12">
-          <img src="/src/assets/congratulations.png" alt="" />
         </div>
         <div class="cs1 ce12">
-          <h1>Congratulations!</h1>
-          <p>You've just created your first Miro app!</p>
-          <p>
-            To explore more and build your own app, see the Miro Developer
-            Platform documentation.
-          </p>
+            Begin working with the cards and see what the LLM has to add.
         </div>
         <div class="cs1 ce12">
           <a
             class="button button-primary"
             target="_blank"
-            href="https://developers.miro.com"
+            nohref 
+            id="initBasicScenario"
           >
-            Read the documentation
+          Basic Scenario
+          </a>
+          <a
+            class="button button-primary"
+            target="_blank"
+            nohref 
+            id="initCompareScenario"
+          >
+          Comparison Scenario
+          </a>
+          <a
+            class="button button-primary"
+            target="_blank"
+            nohref 
+            id="beginCompare"
+          >
+          Begin Comparison
           </a>
         </div>
       </div>
     </div>
     
     <script type="module" src="/src/app.js"></script>
+    <script type="module" src="/src/app-shared.js"></script>
   </body>
 </html>

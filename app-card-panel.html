@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/src/assets/style.css" />
+  <script src="https://miro.com/app/static/sdk/v2/miro.js"></script>
+  <title>ChattyCards</title>
+</head>
+
+<body>
+
+  <div id="root">
+    <div class="grid wrapper">
+      <div class="cs1 ce12">
+        <h1>Details</h1>
+        <textarea class="aisTextArea" id="fTitle"></textarea>
+        <textarea class="aisTextArea" id="fDesc"></textarea>
+
+      </div>
+      <div class="cs1 ce12">
+        <h1>AI Actions</h1>
+        <a class="button button-primary" target="_blank" nohref id="updateBtn">
+          Review
+        </a>
+        <a class="button button-secondary" target="_blank" nohref id="proposeBtn">
+          Propose
+        </a>
+        <p id="fAI" style="padding:4px;">
+          ...
+        </p>
+      </div>
+      <div class="cs1 ce12">
+        <a class="button button-primary" target="_blank" nohref id="doneBtn">
+          Done
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/app-card-panel.js"></script>
+  <script type="module" src="/src/app-shared.js"></script>
+</body>
+
+</html>
